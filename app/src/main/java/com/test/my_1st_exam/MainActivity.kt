@@ -1,10 +1,11 @@
-package com.example.salarycalculator
+package com.test.my_1st_exam
 
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,8 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         // Button click event
         btnCalculate.setOnClickListener {
-            val hoursWorked = tieHours.text.toString().toDoubleOrNull() ?: 0.0
-            val hourlyRate = tieRate.text.toString().toDoubleOrNull() ?: 0.0
+            val hoursWorked = tieHours.text?.toString()?.toDoubleOrNull() ?: 0.0
+            val hourlyRate = tieRate.text?.toString()?.toDoubleOrNull() ?: 0.0
 
             if (hoursWorked > 0 && hourlyRate > 0) {
                 val baseSalary = hoursWorked * hourlyRate

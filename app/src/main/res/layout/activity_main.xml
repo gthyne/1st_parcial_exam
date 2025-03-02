@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="Horas trabajadas">
+        android:hint="@string/horas_trabajadas">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tieHours"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:hint="Tarifa por hora"
+        android:hint="@string/tarifa_por_hora"
         app:layout_constraintTop_toBottomOf="@id/tilHours">
 
         <com.google.android.material.textfield.TextInputEditText
